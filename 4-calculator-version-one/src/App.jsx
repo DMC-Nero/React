@@ -8,6 +8,14 @@ function App() {
   const [calVal, setCalVal] = useState("WELLCOME");
 
   const onButtonClick = (buttonText) => {
+    if (calVal === 'WELLCOME') {
+      if(buttonText != 'AC' && buttonText != 'Del' && buttonText != '%' && buttonText != '/' && buttonText != '*' && buttonText != '=' ) {
+        setCalVal(buttonText);
+      }else {
+        setCalVal("");
+      }
+
+    } else {
     console.log("Named function -> button clicked. " + buttonText)
     if (buttonText === "AC") {
       setCalVal("");
@@ -24,7 +32,7 @@ function App() {
       setCalVal(newDisplayValue);
     }
   }
-
+}
   return (
     <center>
       <h1>Nero's - Calculator</h1>
