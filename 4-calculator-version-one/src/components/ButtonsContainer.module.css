@@ -18,3 +18,10 @@
     color: black;
     border-color: antiquewhite;
   }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
