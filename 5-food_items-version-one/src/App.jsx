@@ -7,7 +7,7 @@ import FoodItems from "./components/FoodItems";
 function App() {
   let foodItems = ["Biryani", "Dosa", "Idly", "poori", "swarma", "Bonda"];
 
-  //let foodItems = [];
+  // let foodItems = [];
   return (
     <>
       <h1 className="food-heading">Healthy Food</h1>
